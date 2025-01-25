@@ -17,7 +17,6 @@ const { label = 'Kliknij mnie!', additionalInfo = 'Domyślna informacja z Vue' }
 
 const emit = defineEmits<{
   clicked: [string],
-  save: [IProductGroup]
 }>()
 
 const handleClick = () => {

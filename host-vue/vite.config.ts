@@ -19,6 +19,12 @@ export default defineConfig({
       shared: ['vue'],
     }),
   ],
+  build: {
+    modulePreload: false,
+    target: 'esnext',
+    minify: false,
+    cssCodeSplit: false,
+  },
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
